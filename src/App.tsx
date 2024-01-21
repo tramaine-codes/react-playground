@@ -3,7 +3,8 @@ import { constVoid } from 'effect/Function';
 import { useState } from 'react';
 import { match } from 'ts-pattern';
 
-type SquareValue = Option.Option<'X' | 'O'>;
+type XOrO = 'X' | 'O';
+type SquareValue = Option.Option<XOrO>;
 
 interface SquareProps {
   readonly value: SquareValue;
@@ -28,9 +29,11 @@ export default function Board() {
     Option.match(squares[i], {
       onNone: () => {
         const nextSquares = [...squares];
-        nextSquares[i] = match<boolean, SquareValue>(xIsNext)
-          .with(true, () => Option.some('X'))
-          .otherwise(() => Option.some('O'));
+        nextSquares[i] = Option.some(
+          match<boolean, XOrO>(xIsNext)
+            .with(true, () => 'X')
+            .otherwise(() => 'O')
+        );
         setSquares(nextSquares);
         setXIsNext(!xIsNext);
       },
