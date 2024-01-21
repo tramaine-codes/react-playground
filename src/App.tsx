@@ -3,9 +3,11 @@ import { constVoid } from 'effect/Function';
 import { useState } from 'react';
 import { match } from 'ts-pattern';
 
+type SquareValue = Option.Option<'X' | 'O'>;
+
 interface SquareProps {
-  value: Option.Option<string>;
-  onSquareClick: () => void;
+  readonly value: SquareValue;
+  readonly onSquareClick: () => void;
 }
 
 function Square({ value, onSquareClick }: SquareProps) {
@@ -18,7 +20,7 @@ function Square({ value, onSquareClick }: SquareProps) {
 
 export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
-  const [squares, setSquares] = useState<readonly Option.Option<string>[]>(
+  const [squares, setSquares] = useState<readonly SquareValue[]>(
     Array(9).fill(Option.none())
   );
 
@@ -26,7 +28,7 @@ export default function Board() {
     Option.match(squares[i], {
       onNone: () => {
         const nextSquares = [...squares];
-        nextSquares[i] = match(xIsNext)
+        nextSquares[i] = match<boolean, SquareValue>(xIsNext)
           .with(true, () => Option.some('X'))
           .otherwise(() => Option.some('O'));
         setSquares(nextSquares);
