@@ -14,24 +14,24 @@
     "effect": "2.4.18",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "ts-pattern": "5.1.0"
+    "ts-pattern": "5.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "19.2.1",
     "@commitlint/config-conventional": "19.1.0",
     "@release-it/conventional-changelog": "8.0.1",
-    "@types/react": "18.2.74",
-    "@types/react-dom": "18.2.24",
-    "@typescript-eslint/eslint-plugin": "7.5.0",
-    "@typescript-eslint/parser": "7.5.0",
+    "@types/react": "18.2.78",
+    "@types/react-dom": "18.2.25",
+    "@typescript-eslint/eslint-plugin": "7.6.0",
+    "@typescript-eslint/parser": "7.6.0",
     "@vitejs/plugin-react-swc": "3.6.0",
     "eslint": "8.57.0",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.6",
     "husky": "9.0.11",
     "prettier": "3.2.5",
-    "release-it": "17.1.1",
-    "typescript": "5.4.4",
+    "release-it": "17.2.0",
+    "typescript": "5.4.5",
     "vite": "5.2.8"
   }
 }
