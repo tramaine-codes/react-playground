@@ -29,7 +29,8 @@
     "lint:fix": "biome lint --apply --no-errors-on-unmatched .",
     "prepare": "husky",
     "preview": "vite preview",
-    "test": "echo 'no tests defined'"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "type": "module",
   "version": "0.0.0"
