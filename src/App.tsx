@@ -13,7 +13,7 @@ interface SquareProps {
 
 function Square({ value, onSquareClick }: SquareProps) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    <button className="square" onClick={onSquareClick} type="button">
       {Option.getOrNull(value)}
     </button>
   );
