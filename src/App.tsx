@@ -1,7 +1,7 @@
 import { Option } from 'effect';
+import { Match } from 'effect';
 import { constVoid } from 'effect/Function';
 import { useState } from 'react';
-import { match } from 'ts-pattern';
 
 type XOrO = 'X' | 'O';
 type SquareValue = Option.Option<XOrO>;
@@ -30,9 +30,10 @@ export default function Board() {
       onNone: () => {
         const nextSquares = [...squares];
         nextSquares[i] = Option.some(
-          match<boolean, XOrO>(xIsNext)
-            .with(true, () => 'X')
-            .otherwise(() => 'O')
+          Match.value(xIsNext).pipe(
+            Match.when(true, () => 'X' as const),
+            Match.orElse(() => 'O' as const)
+          )
         );
         setSquares(nextSquares);
         setXIsNext(!xIsNext);
