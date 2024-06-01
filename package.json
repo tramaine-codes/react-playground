@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "effect": "3.2.5",
+    "effect": "3.2.7",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
@@ -15,7 +15,7 @@
     "husky": "9.0.11",
     "release-it": "17.3.0",
     "typescript": "5.4.5",
-    "vite": "5.2.11",
+    "vite": "5.2.12",
     "vitest": "1.6.0"
   },
   "name": "react-playground",
