@@ -1,22 +1,22 @@
 {
   "dependencies": {
-    "effect": "3.8.4",
+    "effect": "3.10.9",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.3",
+    "@biomejs/biome": "1.9.4",
     "@commitlint/cli": "19.5.0",
     "@commitlint/config-conventional": "19.5.0",
-    "@release-it/conventional-changelog": "8.0.2",
-    "@types/react": "18.3.11",
-    "@types/react-dom": "18.3.0",
+    "@release-it/conventional-changelog": "9.0.2",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
     "@vitejs/plugin-react-swc": "3.7.1",
     "husky": "9.1.6",
-    "release-it": "17.7.0",
-    "typescript": "5.6.2",
-    "vite": "5.4.8",
-    "vitest": "2.1.2"
+    "release-it": "17.10.0",
+    "typescript": "5.6.3",
+    "vite": "5.4.10",
+    "vitest": "2.1.4"
   },
   "name": "react-playground",
   "private": true,
