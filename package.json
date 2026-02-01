@@ -1,23 +1,23 @@
 {
   "dependencies": {
-    "effect": "3.19.14",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "effect": "3.19.15",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.11",
-    "@commitlint/cli": "20.3.1",
-    "@commitlint/config-conventional": "20.3.1",
+    "@biomejs/biome": "2.3.13",
+    "@commitlint/cli": "20.4.0",
+    "@commitlint/config-conventional": "20.4.0",
     "@release-it/conventional-changelog": "10.0.4",
-    "@types/react": "19.2.8",
+    "@types/react": "19.2.10",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react-swc": "4.2.2",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
-    "release-it": "19.2.3",
+    "release-it": "19.2.4",
     "typescript": "5.9.3",
     "vite": "7.3.1",
-    "vitest": "4.0.16"
+    "vitest": "4.0.18"
   },
   "name": "react-playground",
   "private": true,
